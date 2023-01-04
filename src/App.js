@@ -4,6 +4,7 @@ import './App.css';
 import MovieList from './components/MovieList';
 import MovieListHeading from './components/MovieListHeading';
 import SearchBox from './components/SearchBox';
+import YoutubeEmbed from "./components/YoutubeEmbed";
 
 const App = () => {
 	const [movies, setMovies] = useState([]);
@@ -30,10 +31,12 @@ const App = () => {
 				<MovieListHeading heading='Movies' />
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
+			<div><YoutubeEmbed embedId="8Qn_spdM5Zg" /></div>
 			<div className='row'>
 				<MovieList movies={movies} />
 			</div>
 		</div>
+		
 	);
 };
 
